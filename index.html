@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Redes Delta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="desktop-body" style="display:none;">
+
+    <div class="main-screen">
+        <div class="top-info">SISTEMA_VIRTUAL // ESTADO: EN LÍNEA</div>
+        
+        <div class="icon-container">
+            <div class="app-item" onclick="access('video')">
+                <div class="app-box gradient-red"></div>
+                <span>Terminal_A</span>
+            </div>
+
+            <div class="app-item" onclick="access('social')">
+                <div class="app-box gradient-blue"></div>
+                <span>Enlace_B</span>
+            </div>
+
+            <div class="app-item" onclick="access('logic')">
+                <div class="app-box gradient-green"></div>
+                <span>Módulo_C</span>
+            </div>
+        </div>
+
+        <div id="window-overlay" class="window-hidden">
+            <div class="window-top">
+                <span id="label-title">EJECUTANDO...</span>
+                <button onclick="terminate()">CERRAR [X]</button>
+            </div>
+            <div class="window-main">
+                <iframe id="content-frame" src=""></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
