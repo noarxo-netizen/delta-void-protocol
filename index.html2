@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Void System Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-hub">
+        <header>
+            <h1 id="sys-title">VOID_PROTOCOL</h1>
+            <p>Accessing encrypted terminal...</p>
+        </header>
+
+        <div class="grid-container">
+            <div class="node-card" onclick="launch('alpha')">
+                <div class="status-dot"></div>
+                <h3>NODE_ALPHA</h3>
+                <p>Visual Data Stream</p>
+            </div>
+            <div class="node-card" onclick="launch('beta')">
+                <div class="status-dot"></div>
+                <h3>NODE_BETA</h3>
+                <p>Social Architecture</p>
+            </div>
+            <div class="node-card" onclick="launch('gamma')">
+                <div class="status-dot"></div>
+                <h3>NODE_GAMMA</h3>
+                <p>Interactive Logic</p>
+            </div>
+        </div>
+
+        <div id="display-portal" class="portal-hidden" style="display:none;">
+            <div class="portal-header">
+                <span id="portal-id">STREAMING...</span>
+                <button onclick="killProcess()">TERMINATE</button>
+            </div>
+            <iframe id="portal-frame" src=""></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
