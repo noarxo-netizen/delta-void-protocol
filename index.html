@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sistemas Delta - Protocolo Void</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="main-ui" style="display:none;">
+    <div class="ocean-bg"></div>
+    
+    <div class="top-bar">
+        <div class="nav-group">
+            <button class="node-btn" onclick="openDrawer('ai')">[NÚCLEOS_IA]</button>
+            <button class="node-btn" onclick="openDrawer('apps')">[RECURSOS_A]</button>
+            <button class="node-btn" onclick="openDrawer('games')">[MÓDULOS_L]</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <h1 class="logo-title">PROTOCOLO VOID</h1>
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="cloud-search" placeholder="[NAVEGACIÓN_NUBE]_" onkeydown="if(event.key==='Enter') launchCloud()">
+        </div>
+    </div>
+
+    <div id="drawer" class="drawer">
+        <div class="drawer-header">
+            <span id="drawer-title">SISTEMA</span>
+            <button onclick="closeDrawer()" class="close-btn">CERRAR [X]</button>
+        </div>
+        <div id="drawer-content" class="drawer-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
